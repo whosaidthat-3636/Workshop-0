@@ -13,13 +13,16 @@ In this workshop, the idea is the experiment with different variables, condition
 ### 1. Setting up the canvas and 2D shapes
 - Background
   * setting the scale of the Canvas to be 300 in width, 400 in height
-  * background selected from a [rgb color picker](https://www.rapidtables.com/web/color/RGB_Color.html) to be a lighter shade closer to white
+  * background selected from a [RGB color picker](https://www.rapidtables.com/web/color/RGB_Color.html) to be a lighter shade closer to white
   ```
   function setup() {
   createCanvas(300, 400);}
   function draw() {
   background(250, 249, 249);
 - Lines
+  * straight line
+  * lines at an angle
+  * heavier strokes 
   ```
   stroke(0);
   strokeWeight(5);
@@ -28,18 +31,24 @@ In this workshop, the idea is the experiment with different variables, condition
   line(180, 150, 400, 60);
   ```
 - Arc
+  * placed in the middle of the canvas
+  * with no fill
   ```
   noStroke();
   fill(204, 204, 255);
   arc(155, 280, 100, 100, 0, PI + HALF_PI);
   ```
 - Triangle
+  * placed at the top left of the canvas
   ```
   noStroke(0);
   fill(153, 204, 244);
   triangle(15, 25, 155, 10, 30, 250);
   ```
 - Rectangle
+  * placed on the right of the canvas
+  * half of the shape is out of the canvas view
+  * with a white stroke
   ```
   stroke(255);
   fill(255, 255, 153);
@@ -47,7 +56,7 @@ In this workshop, the idea is the experiment with different variables, condition
   ```
 
 ### 2. Arc
-- I started with the color 
+- I started with the color through a [RGB color picker](https://www.rapidtables.com/web/color/RGB_Color.html)
 
   
   
