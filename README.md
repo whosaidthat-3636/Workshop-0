@@ -1,6 +1,7 @@
 # Workshop-0
 
 Link: [https://whosaidthat-3636.github.io/Workshop-0/]
+
 In this workshop, the idea is the experiment with different variables, conditions and increments through 2D primitives
 
 ## Tasks
@@ -9,7 +10,15 @@ In this workshop, the idea is the experiment with different variables, condition
 * Experiment with at least one of the following 2D primitive shapes from the p5.js documentation: line, triangle, quad, arc.
 * Keep notes to clearly document your process and learning.
 
-### 1. Writing 2D Primitive Shapes
+### 1. Setting up the canvas and 2D shapes
+- Background
+  * setting the scale of the Canvas to be 300 in width, 400 in height
+  * background selected from a [rgb color picker](https://www.rapidtables.com/web/color/RGB_Color.html) to be a lighter shade closer to white
+  ```
+  function setup() {
+  createCanvas(300, 400);}
+  function draw() {
+  background(250, 249, 249);
 - Lines
   ```
   stroke(0);
@@ -22,7 +31,7 @@ In this workshop, the idea is the experiment with different variables, condition
   ```
   noStroke();
   fill(204, 204, 255);
-  arc(x, 280, 100, 100, 0, PI + HALF_PI);
+  arc(155, 280, 100, 100, 0, PI + HALF_PI);
   ```
 - Triangle
   ```
@@ -37,7 +46,8 @@ In this workshop, the idea is the experiment with different variables, condition
   rect(250, 100, 100, 200);
   ```
 
-### 2. 
+### 2. Arc
+- I started with the color 
 
   
   
