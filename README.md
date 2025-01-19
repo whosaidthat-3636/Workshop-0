@@ -57,6 +57,23 @@ In this workshop, the idea is the experiment with different variables, condition
 
 ### 2. Arc
 - I started with the color through a [RGB color picker](https://www.rapidtables.com/web/color/RGB_Color.html)
+- The arc has a parameter that allows for a specific mode to fill the arc. For this instance a quarter has been taken off a full circle through the parameters of "PI + HALF_PI"
+- The idea is to have the arc go in a loop using assignment by using a variable, expression and condition followed by the workshop video
+   <img width="572" alt="image" src="https://github.com/user-attachments/assets/3d520f14-20ea-4958-94b9-628583862305" />
+
+- However the code does not work because the shape moves in the _left direction_ but is _set to reset on the left side_ of the canvas 
+ ```
+
+  x = x - 6; 
+
+  if (x > width) { 
+
+    x = 100;}
+```
+- 
+
+
+
 
   
   
