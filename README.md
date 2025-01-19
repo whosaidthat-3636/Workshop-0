@@ -63,14 +63,19 @@ In this workshop, the idea is the experiment with different variables, condition
 
 - However the code does not work because the shape moves in the _left direction_ but is _set to reset on the left side_ of the canvas 
  ```
-
   x = x - 6; 
 
   if (x > width) { 
 
     x = 100;}
 ```
-- 
+- Correction through trial and error, learning to take the width of the arc into account
+<img width="71" alt="image" src="https://github.com/user-attachments/assets/9f26e924-57df-4385-9a7e-1845b4f256de" />
+ * arc now resets from the right
+- To further expand I want to set it so that every time the arc reappears on the screen it decreases in transparency as viewed by the Coding Train on YT (Lesson 1.4)
+  
+
+
 
 
 
