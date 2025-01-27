@@ -9,6 +9,9 @@ In this workshop, the idea is the experiment with different variables, condition
 * Make a p5.js sketch using 2D primitive shapes, variables, and conditionals. Make sure to save your work.
 * Experiment with at least one of the following 2D primitive shapes from the p5.js documentation: line, triangle, quad, arc.
 
+
+## Documentation
+
 ### 1. Setting up the canvas and 2D shapes
 - Background
   * setting the scale of the Canvas to be 300 in width, 400 in height
