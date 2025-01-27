@@ -1,28 +1,61 @@
-function setup() {
-  createCanvas(550, 400);
-  background(98, 162, 107);
+let x = 300;
+let y = 400;
+let z = 0;
+let move = 1;
+let ArcTransparency = 255;
 
-  for (let x = 0; x < 15; x++) {
-    ball(random(0, width), random(0, height), 30, color(random(255), random(255), random(255)));
-  }
+function setup() {
+  createCanvas(300, 400);
 }
 
 function draw() {
-  fill(100,58,45);
-  rect(0, 0, 550, 25);
-  rect(0, 375, 550, 25);
-  rect(0, 0, 25, 400);
-  rect(525, 0, 25, 400);
+  background(250, 249, 249);
+
+  if (y > height) {
+    y = 0;
+  } else if (y > height / 2) {
+    fill(255, 0, 0);  
+  } else {
+    fill(153, 204, 244);  
+  }
   
-  fill(255);
-  text('Refresh page for new results', 10, 20);
+  noStroke();
+  triangle(15, y, 155, y - 15, 30, y + 225);
+  
+  y = y + 3;
+
+  stroke(0);
+  strokeWeight(5);
+  line(250, 15, 400, 15);
+  line(150, 90, 400, 20);
+  line(180, 150, 400, 60);
+
+  stroke(255);
+  fill(255, 255, 153);
+  rect(z, 100, 100, 200);
+
+  stroke(0);
+  strokeWeight(1);
+  fill(204, 204, 255, ArcTransparency);
+  arc(x, 280, 100, 100, 0, PI + HALF_PI);
+
+  x = x - 6;
+  if (x < -100) {
+    x = width;
+
+    ArcTransparency = ArcTransparency - 30;
+    if (ArcTransparency < 0) {
+      ArcTransparency = 255;
+    }
+  }
+  
+   z += move;
+  
+  if (z > width - 100) {
+  move = -1; 
 }
 
-function ball(x, y, size, baseColor) {
-  fill(255); 
-  noStroke();
-  ellipse(x, y, size, size);
-
-  fill(baseColor);
-  ellipse(x, y, size * 1.015, size * 0.6); 
+if (z < 0) {
+  move = 1; 
+ }
 }
