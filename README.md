@@ -56,7 +56,6 @@ In this workshop, the idea is the experiment with different variables, condition
   ```
 
 ### 2. Arc
-- I started with the color through a [RGB color picker](https://www.rapidtables.com/web/color/RGB_Color.html)
 - The arc has a parameter that allows for a specific mode to fill the arc. For this instance a quarter has been taken off a full circle through the parameters of "PI + HALF_PI"
 - The idea is to have the arc go in a loop using assignment by using a variable, expression and condition followed by the workshop video
   
@@ -133,6 +132,7 @@ let ArcTransparency = 255;
 
  ### 4. Rectangle
  - For the rectangle, it should bounces back and forth between the walls
+ - By this point I felt more confident and there wasn't much issues in execution
 ```
 let z = 0;
 let move = 1;
@@ -153,8 +153,6 @@ if (z < 0) {
 }
 ```
 
-
-## Reflection
 
  
 
